@@ -8,7 +8,8 @@ public class Sell : MonoBehaviour
 
     public void ClickTheButton()
     {
-        GlobalMoney.MoneyCount += 1;
+        GlobalOre.OreCount -= 1;
+        GlobalCash.CashCount += 1;
     }	
 	
 }

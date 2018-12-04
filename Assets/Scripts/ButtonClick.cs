@@ -8,7 +8,7 @@ public class ButtonClick : MonoBehaviour
 
     public void ClickTheButton()
     {
-        GlobalMoney.MoneyCount += 1;
+        GlobalOre.OreCount += 1;
     }	
 	
 }
