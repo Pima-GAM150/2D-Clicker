@@ -8,7 +8,7 @@ public class ButtonClick : MonoBehaviour
 
     public void ClickTheButton()
     {
-        textBox.SetActive(true);
+        GlobalMoney.MoneyCount += 1;
     }	
 	
 }
