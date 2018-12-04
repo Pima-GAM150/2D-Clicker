@@ -13,6 +13,6 @@ public class GlobalMoney : MonoBehaviour {
 	void Update ()
     {
         InternalMoney = MoneyCount;
-        MoneyDisplay.GetComponent<Text>().text = "$" + InternalMoney;
+        MoneyDisplay.GetComponent<Text>().text = "Ore: " + InternalMoney;
 	}
 }
