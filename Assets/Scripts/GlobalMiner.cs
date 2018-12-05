@@ -12,13 +12,14 @@ public class GlobalMiner : MonoBehaviour {
     public int currentCash;
     public static int minerValue = 10;
     public static bool turnOffButton = false;
-
-	
-	
+    public GameObject minerStats;
+    public static int numberOfMiners;
+    public static int minedPerSec;
 	
 	void Update ()
     {
         currentCash = GlobalCash.CashCount;
+        minerStats.GetComponent<Text>().text = "Miners: " + numberOfMiners + " @ " + minedPerSec + " Per Second";
         fakeText.GetComponent<Text>().text = "Buy Miner - $" + minerValue;
         realText.GetComponent<Text>().text = "Buy Miner - $" + minerValue;
         if (currentCash >= minerValue)

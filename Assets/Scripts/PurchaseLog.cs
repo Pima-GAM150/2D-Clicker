@@ -12,5 +12,7 @@ public class PurchaseLog : MonoBehaviour {
         GlobalCash.CashCount -= GlobalMiner.minerValue;
         GlobalMiner.minerValue *= 2;
         GlobalMiner.turnOffButton = true;
+        GlobalMiner.minedPerSec += 1;
+        GlobalMiner.numberOfMiners += 1;
     }
 }

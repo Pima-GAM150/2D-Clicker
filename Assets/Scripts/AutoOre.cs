@@ -11,6 +11,7 @@ public class AutoOre : MonoBehaviour {
 	
 	void Update ()
     {
+        OreIncrease = GlobalMiner.minedPerSec;
         InternalIncrease = OreIncrease;
         if (CreatingOre == false)
         {
