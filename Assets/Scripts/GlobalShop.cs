@@ -19,7 +19,7 @@ public class GlobalShop : MonoBehaviour {
 	void Update ()
     {
         currentCash = GlobalCash.CashCount;
-        shopStats.GetComponent<Text>().text = "Miners: " + numberOfShops + " @ " + shopPerSec + " Per Second";
+        shopStats.GetComponent<Text>().text = "Shop: " + numberOfShops + " @ " + shopPerSec + " Per Second";
         fakeText.GetComponent<Text>().text = "Buy Shop - $" + shopValue;
         realText.GetComponent<Text>().text = "Buy Shop - $" + shopValue;
         if (currentCash >= shopValue)
